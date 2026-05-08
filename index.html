@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UFT-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>Интерактивное объявление</tittle>
+    <title>Рекламный баннер</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Область ввода текста и ссылки на картинку -->>
-      <div class="input-section">
+</head>
+<body>
+    <!-- Форма для ввода данных -->
+    <div class="input-section">
         <label for="background-word">Введите слово для фона:</label>
         <input type="text" id="background-word" placeholder="Например, «лето»">
 
         <br><br>
 
-        <label for="image url">Введите ссылку для вашего изображения:</label>
-        <input type="url" id="image-url" placeholder="https:example.com/image.jpg">
-      
-      <button onclick="updateBackground()">Применить</button>button>
-        
-      </div>
+        <label for="image-url">Введите ссылку для вашего изображения:</label>
+        <input type="url" id="image-url" placeholder="https://example.com/image.jpg">
 
-    
-    <!-- Область отображения объявления -->>
-
-    <div class="banner" id="banner">
-      <div class="ad-text">
-        Специально предложение! Скидка 50%!
-      </div>
+        <button onclick="updateBackground()">Применить</button>
     </div>
+
+    <!-- Баннер: фон (изображение/слово) + рекламный текст -->
+    <div class="banner" id="banner">
+        <div class="ad-text">
+            Специальное предложение! Скидка 50%!
+        </div>
+    </div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
