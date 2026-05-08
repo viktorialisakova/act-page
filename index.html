@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script src="script.js"></script>
     <!-- Область ввода текста и ссылки на картинку -->>
       <div class="input-section">
         <label for="background-word">Введите слово для фона:</label>
@@ -16,10 +15,13 @@
         <br><br>
 
         <label for="image url">Введите ссылку для вашего изображения:</label>
-        <input type="url" id="image-urld" placeholder="https:example.com/image.jpg">
+        <input type="url" id="image-url" placeholder="https:example.com/image.jpg">
+      
+      <button onclick="updateBackground()">Применить</button>button>
+        
       </div>
 
-    <button onclick="updateBackground()">Применить</button>button>
+    
     <!-- Область отображения объявления -->>
 
     <div class="banner" id="banner">
@@ -27,6 +29,6 @@
         Специально предложение! Скидка 50%!
       </div>
     </div>
-    
+    <script src="script.js"></script>
   </body>
 </html>
