@@ -20,4 +20,3 @@ function updateBackground() {
         banner.removeAttribute('data-background-word');
     }
 }
-
